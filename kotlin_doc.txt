@@ -45,3 +45,8 @@ This function is used to execute code. Any code inside the main() function's cur
     /* The code below will print the words Hello World
     to the screen, and it is amazing */
     println("Hello World")  
+
+
+
+## Kotlin Variables:
+=>
