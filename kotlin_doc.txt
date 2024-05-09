@@ -75,6 +75,8 @@ Names should start with a lowercase letter and it cannot contain whitespace
 Reserved words (like Kotlin keywords, such as var or String) cannot be used as names
 
 
+
+
 *** kotlin Classes :
 
 Kotlin is a programming language that runs on the Java Virtual Machine (JVM) 
@@ -89,3 +91,40 @@ Example :-
 }
 In this example, Person is the class name. It has two properties: name and age,
    both initialized with default values.
+
+
+   
+*** Kotlin Constructor:-
+A constructor in programming, including in Kotlin, is a special type of method
+that is automatically called when an instance (object) of a class is created.
+Its primary purpose is to initialize the newly created object.
+
+In Kotlin, there are two types of constructors:
+
+1.Primary Constructor: The primary constructor is defined in the class header. 
+  It can include properties and initialization logic.
+
+Example:-
+      class Person(val name: String, val age: Int) {
+    // Initialization code can be placed here
+}
+In this example, name and age are properties of the Person class, 
+and they are initialized using the primary constructor.
+
+2.Secondary Constructor: Secondary constructors are defined inside the class body.
+ They provide additional options for object initialization, 
+ but they must delegate to the primary constructor using the "this" keyword.
+
+Example:-
+  class Person {
+    val name: String
+    val age: Int
+
+    constructor(name: String, age: Int) {
+        this.name = name
+        this.age = age
+    }
+}
+In this example, Person class has a secondary constructor that takes name and age parameters.
+  Inside the secondary constructor, the properties name and age are initialized
+  using the this keyword to refer to the properties of the class.
