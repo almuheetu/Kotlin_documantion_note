@@ -73,3 +73,19 @@ Names can also begin with $ and _ (but we will not use it in this tutorial)
 Names are case sensitive ("myVar" and "myvar" are different variables)
 Names should start with a lowercase letter and it cannot contain whitespace
 Reserved words (like Kotlin keywords, such as var or String) cannot be used as names
+
+
+*** kotlin Classes :
+
+Kotlin is a programming language that runs on the Java Virtual Machine (JVM) 
+and also can be compiled to JavaScript or native code.
+In Kotlin, classes are blueprints for creating objects, 
+which are instances of those classes.
+
+Example :-
+  class Person {
+    var name: String = ""
+    var age: Int = 0
+}
+In this example, Person is the class name. It has two properties: name and age,
+   both initialized with default values.
